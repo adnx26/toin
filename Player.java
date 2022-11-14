@@ -6,6 +6,19 @@ class Player{
         return min + (int)(Math.random() * max);
     }
 
+    public void run(String str){
+        System.out.println("ran");
+        if(str.equals("fish")){
+            fish();
+        }
+    }
+    
+    public void fish(){
+        int earned = randomNum(2, 10);
+        coins+=earned;
+        String s = (earned >6)? ("What a big fish!") : ("What a small fish!");
+        System.out.println(s + "\nYou got " + earned + " coins");
+    }
     public void setHealth(int value){
         health = value;
     }
