@@ -5,12 +5,17 @@ public class Game {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Player player = new Player();
-        while (true){
+        boolean gameOver = false;
+        while (gameOver == false){
+            //Get command
             System.out.println("");
-            String inp = sc.nextLine();
-            player.run(inp);
-            break;
+            player.run(sc.nextLine());
         }
+
+
+        
+
+
 
     }
     
